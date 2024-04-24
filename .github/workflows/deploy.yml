@@ -62,10 +62,9 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          path: |
-            .output/public
-            .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('output/public') }}
+          path:
+            .nuxt/dist
+          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
@@ -75,9 +74,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            .output/public
-            .nuxt
+          path:
+            .nuxt/dist
 
   # Deployment job
   deploy:
