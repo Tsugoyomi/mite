@@ -7,8 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "nuxt generate && gh-pages -d .nuxt/dist -t true"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "nuxt": "^3.9.0",
