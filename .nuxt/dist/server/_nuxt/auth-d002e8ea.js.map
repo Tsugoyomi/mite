@@ -1,0 +1,1 @@
+{"version":3,"file":"auth-d002e8ea.js","sources":["../../../../middleware/auth.ts"],"sourcesContent":["export default defineNuxtRouteMiddleware((to, from) => {\r\n  return navigateTo('/innocence');\r\n})"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAAA,MAAA,OAAyC,0CAAA,CAAC,IAAI,SAAS;AACrD,SAAO,WAAW,YAAY;AAChC,CAAC;"}
