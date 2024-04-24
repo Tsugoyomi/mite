@@ -1,17 +1,14 @@
 <script setup lang="ts">
   definePageMeta({
-    middleware: defineNuxtRouteMiddleware((to, from) => {
-      return navigateTo('/innocence');
-    })
+    // middleware: defineNuxtRouteMiddleware((to, from) => {
+    //   return navigateTo('/innocence');
+    // })
   })
 </script>
 
 <template>
   <v-container class="welcome-page">
     <v-row align="center">
-      <v-col>
-        <v-img src="@/assets/welcome_image.jpg" alt="Welcome Image" fluid />
-      </v-col>
       <v-col>
         <v-card elevation="3">
           <v-card-title class="headline">Wecome to EIR AOI - Iris</v-card-title>
